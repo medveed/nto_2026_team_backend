@@ -1,4 +1,3 @@
 package ru.nto.team.dto.response
 
-class ProfileDto {
-}
+class ProfileDto(val name: String)
