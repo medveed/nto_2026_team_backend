@@ -1,11 +1,9 @@
-package ru.nto.team
+package ru.nto.team.common.error
 
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 
 // TODO: implement domain errors and validation errors. This only makes unfinished routes usable.
-class ApiException(val status: Int, message: String) : RuntimeException(message)
-
 @RestControllerAdvice
 class ApiExceptionHandler {
     @ExceptionHandler(ApiException::class)
